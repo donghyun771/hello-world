@@ -30,6 +30,6 @@ docker {
 	println("gradle docker-plugin start = hello-world:${version}")
 	name "hello-world:${version}"
 	files tasks.bootJar.outputs.files
-	tag 'DockerHub', "hello-world:${version}"
+	tag 'DockerHub', "donghyun771/hello-world:${version}"
 	buildArgs(['JAR_FILE': tasks.bootJar.outputs.files.singleFile.name])
 }
